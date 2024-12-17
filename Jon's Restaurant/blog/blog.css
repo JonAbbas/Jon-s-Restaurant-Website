@@ -1,0 +1,83 @@
+/* blog.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+header .logo h1 {
+    font-size: 2.5rem;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Blog Section */
+.blog {
+    padding: 60px 20px;
+}
+
+.blog h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.blog .post {
+    margin-bottom: 30px;
+}
+
+.blog .post h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.blog .post p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.blog .btn {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

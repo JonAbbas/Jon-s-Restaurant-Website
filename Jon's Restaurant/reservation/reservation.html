@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation - YumYard Restaurant</title>
+    <link rel="stylesheet" href="reservation.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>YumYard</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../homepage/index.html">Home</a></li>
+                <li><a href="../menu/menu.html">Menu</a></li>
+                <li><a href="../aboutus/about.html">About Us</a></li>
+                <li><a href="../gallery/gallery.html">Gallery</a></li>
+                <li><a href="../contactus/contact.html">Contact Us</a></li>
+                <li><a href="../blog/blog.html">Blog</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="reservation">
+            <h2>Book a Table</h2>
+            <p>Fill in the form below to reserve your table at YumYard Restaurant.</p>
+
+            <!-- Reservation Form -->
+            <form id="reservationForm" onsubmit="handleReservation(event)">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required pattern="^\+?[1-9]\d{1,14}$" title="Please enter a valid phone number.">
+
+                <label for="date">Reservation Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Reservation Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" required min="1">
+
+                <button type="submit" class="btn">Reserve Now</button>
+            </form>
+
+            <!-- Confirmation Message -->
+            <div class="confirmation" style="display: none;">
+                <h3>Reservation Confirmed!</h3>
+                <p>Your table has been reserved successfully. We look forward to serving you at YumYard!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 YumYard Restaurant. All rights reserved.</p>
+    </footer>
+
+    <script src="reservation.js"></script>
+</body>
+</html>
